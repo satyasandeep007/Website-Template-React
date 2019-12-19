@@ -1,19 +1,88 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Contact.css';
 
 export default class Contact extends Component {
     render() {
         return (
             <div>
-                <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra sodales dui sit amet bibendum. Donec a hendrerit ante. Aliquam erat volutpat. Ut finibus turpis vitae lorem aliquam, et lobortis augue maximus. Morbi placerat lorem quis eros vestibulum, a hendrerit est vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id tellus odio. Etiam vehicula, augue nec lacinia condimentum, diam augue rhoncus eros, nec scelerisque magna dui id velit. Aenean dignissim lectus ex, non lobortis sem malesuada sed. Praesent ornare nisi id cursus maximus. Mauris sollicitudin ex sit amet est hendrerit fringilla. Nam dictum porttitor orci, at accumsan sem luctus sed. Donec tincidunt augue quis ante dignissim pellentesque. Vivamus ac turpis posuere, pretium neque sed, ullamcorper velit. Praesent et elit porttitor, vulputate tortor id, pretium risus.
 
-Vivamus ullamcorper tempus libero, at blandit augue pulvinar faucibus. Nullam pulvinar congue malesuada. Integer quam massa, facilisis in ligula id, gravida cursus velit. Ut fermentum est nec leo fringilla, vitae fermentum felis tincidunt. Praesent ut sem at risus sodales euismod eu et dolor. Aliquam tincidunt suscipit erat, eget efficitur mauris consectetur a. Mauris vulputate venenatis mauris, quis laoreet ex aliquet sit amet.
-                </p>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra sodales dui sit amet bibendum. Donec a hendrerit ante. Aliquam erat volutpat. Ut finibus turpis vitae lorem aliquam, et lobortis augue maximus. Morbi placerat lorem quis eros vestibulum, a hendrerit est vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id tellus odio. Etiam vehicula, augue nec lacinia condimentum, diam augue rhoncus eros, nec scelerisque magna dui id velit. Aenean dignissim lectus ex, non lobortis sem malesuada sed. Praesent ornare nisi id cursus maximus. Mauris sollicitudin ex sit amet est hendrerit fringilla. Nam dictum porttitor orci, at accumsan sem luctus sed. Donec tincidunt augue quis ante dignissim pellentesque. Vivamus ac turpis posuere, pretium neque sed, ullamcorper velit. Praesent et elit porttitor, vulputate tortor id, pretium risus.
+<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1">
+                    Contact us <small>Feel free to contact us</small></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+            <address>
+                <strong>Twitter, Inc.</strong><br/>
+                795 Folsom Ave, Suite 600<br/>
+                San Francisco, CA 94107<br/>
+                <abbr title="Phone">
+                    P:</abbr>
+                (123) 456-7890
+            </address>
+            <address>
+                <strong>Full Name</strong><br/>
+                <a href="mailto:#">first.last@example.com</a>
+            </address>
+            </form>
+        </div>
+    </div>
+</div>
 
-Vivamus ullamcorper tempus libero, at blandit augue pulvinar faucibus. Nullam pulvinar congue malesuada. Integer quam massa, facilisis in ligula id, gravida cursus velit. Ut fermentum est nec leo fringilla, vitae fermentum felis tincidunt. Praesent ut sem at risus sodales euismod eu et dolor. Aliquam tincidunt suscipit erat, eget efficitur mauris consectetur a. Mauris vulputate venenatis mauris, quis laoreet ex aliquet sit amet.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra sodales dui sit amet bibendum. Donec a hendrerit ante. Aliquam erat volutpat. Ut finibus turpis vitae lorem aliquam, et lobortis augue maximus. Morbi placerat lorem quis eros vestibulum, a hendrerit est vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id tellus odio. Etiam vehicula, augue nec lacinia condimentum, diam augue rhoncus eros, nec scelerisque magna dui id velit. Aenean dignissim lectus ex, non lobortis sem malesuada sed. Praesent ornare nisi id cursus maximus. Mauris sollicitudin ex sit amet est hendrerit fringilla. Nam dictum porttitor orci, at accumsan sem luctus sed. Donec tincidunt augue quis ante dignissim pellentesque. Vivamus ac turpis posuere, pretium neque sed, ullamcorper velit. Praesent et elit porttitor, vulputate tortor id, pretium risus.
-</p>
             </div>
         )
     }
